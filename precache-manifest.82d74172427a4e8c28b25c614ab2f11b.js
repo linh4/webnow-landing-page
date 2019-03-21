@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/webnow-landing-page/static/js/runtime~main.8fd99e85.js"
   },
   {
-    "revision": "659ab36ecfff4f0868e1",
+    "revision": "fc04edd3fcba2d3a48ec",
     "url": "/webnow-landing-page/static/js/main.fd7cad8d.chunk.js"
   },
   {
@@ -12,11 +12,11 @@ self.__precacheManifest = [
     "url": "/webnow-landing-page/static/js/2.a743c3f2.chunk.js"
   },
   {
-    "revision": "659ab36ecfff4f0868e1",
-    "url": "/webnow-landing-page/static/css/main.8caa17f2.chunk.css"
+    "revision": "fc04edd3fcba2d3a48ec",
+    "url": "/webnow-landing-page/static/css/main.70c82b99.chunk.css"
   },
   {
-    "revision": "3011a2d739ba012f0f6837d3649b2a7b",
+    "revision": "909e7ba401d51e5e8ae8d90c6d284588",
     "url": "/webnow-landing-page/index.html"
   }
 ];
