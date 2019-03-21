@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/webnow-landing-page/precache-manifest.82d74172427a4e8c28b25c614ab2f11b.js"
+  "/webnow-landing-page/precache-manifest.5e5040f93d2c84b283ccfa36120155bb.js"
 );
 
 workbox.clientsClaim();
