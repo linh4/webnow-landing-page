@@ -1,0 +1,68 @@
+.footer {
+  padding: 8rem 15rem;
+  font-size: 1.8rem;
+  background-color: $color-primary-dark;
+  color: $color-grey-dark;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 6rem;
+  justify-items: center;
+
+  .info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+
+    &:last-child {
+      align-items: flex-start;
+    }
+
+    &__phone {
+      text-transform: uppercase;
+      color: $color-white;
+    }
+
+    &__icons {
+      width: 2rem;
+      height: 2rem;
+      color: $color-white;
+      margin-right: 1.5rem;
+
+      &:last-child {
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  &-description {
+    line-height: 2.2;
+
+    .title {
+      color: $color-white;
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  &-social {
+    display: flex;
+    flex-direction: column;
+
+    &__icons {
+      margin-bottom: 2rem;
+      width: 3rem !important;
+      height: 3rem !important;
+      color: $color-grey-dark;
+    }
+  }
+
+}

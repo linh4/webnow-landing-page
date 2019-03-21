@@ -1,19 +1,40 @@
 .service-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 3rem;
+  grid-row-gap: 2rem;
+  grid-column-gap: 3rem;
 }
 
 .service {
-  background-color: $color-grey-light;
-  border: 1px solid #000;
+  background-color: $color-teal-lighter;
+  border: 1px solid $color-teal-dark;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all .2s ease-in;
 
   display: grid;
   grid-template-columns: min-content 1fr;
   align-items: center;
 
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+  }
+
   &__icon {
     width: 10rem;
     height: 10rem;
+    margin-left: -1.5rem;
+  }
+
+  &__text {
+    padding: 3.5rem;
+    text-align: left;
+    margin-left: -1.5rem;
+
+    p {
+      font-size: 1.6rem;
+    }
   }
 }

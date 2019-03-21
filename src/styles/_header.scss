@@ -51,15 +51,12 @@
 
 .search {
   padding: 0;
-  // display: flex;
-  // align-items: center;
-
 
   &__input {
     font-family: inherit;
     font-size: 2rem;
     color: inherit;
-    background-color: $color-grey-light;
+    background-color: $color-teal-light;
     border: none;
     padding: 2.3rem 3rem;
     border-radius: 10px;
