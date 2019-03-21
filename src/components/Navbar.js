@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-scroll";
-import { slide as Menu } from 'react-burger-menu'
+import { slide as Menu } from 'react-burger-menu'; //show burger menu in responsive design
 
 const Navbar = () => {
 
   const [ scroll, setScroll ] = useState(false)
 
+  // show sticky navbar only when scroll down 150px
   const handleScroll = () => {
     if (window.scrollY > 150) {
       setScroll(true)
@@ -14,6 +15,7 @@ const Navbar = () => {
     }
   }
 
+  // useEffect update the event listener for scroll
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
   })

@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar';
-import { Link } from "react-scroll";
+import { Link } from "react-scroll"; //apply scroll for clicking on the navbar link
 
 const Header = () => (
   <header className="header">

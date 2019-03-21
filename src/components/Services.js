@@ -2,6 +2,7 @@ import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
+// use LazyLoadImage to increase performance
 const Services = (props) => (
   <section className="section-services">
     <h3 className="heading-secondary">Our Services</h3>
@@ -64,6 +65,5 @@ const Services = (props) => (
     </div>
   </section>
 )
-
 
 export default Services;

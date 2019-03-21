@@ -57,6 +57,10 @@
       bottom: 8%;
     }
 
+    @media only screen and (max-width: $bp-smallest) {
+      bottom: 5%;
+    }
+
     span {
       width: 7rem;
       height: 7rem;
@@ -79,12 +83,19 @@
 }
 
 .search {
-  padding: 0;
+  padding: 4rem;
+  height: 15rem;
   animation: moveInUp 1s ease;
 
   @media only screen and (max-width: $bp-medium) {
     display: flex;
     flex-direction: column;
+    height: 20rem;
+    padding: 0;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    height: 10rem;
   }
 
   &__input {
@@ -101,6 +112,12 @@
     @media only screen and (max-width: $bp-medium) {
       width: 90%;
       margin: 2rem auto;
+      padding: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 1.3rem 3rem;
+      margin: 1rem auto;
     }
 
     &:focus {

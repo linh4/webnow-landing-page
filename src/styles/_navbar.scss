@@ -60,13 +60,13 @@
 }
 
 @media only screen and (max-width: $bp-medium) {
-    .burger-navbar {
-      display: block;
-    }
-    .navbar {
-      display: none;
-    }
+  .burger-navbar {
+    display: block;
   }
+  .navbar {
+    display: none;
+  }
+}
 
 /* Individual item */
 .bm-item {
