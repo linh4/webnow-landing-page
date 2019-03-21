@@ -24,39 +24,49 @@
   @media only screen and (max-width: $bp-small) {
     grid-template-columns: auto;
     grid-row-gap: 1rem;
-    // padding: 0 3rem;
+    text-align: center;
   }
 
   &-left {
     @media only screen and (max-width: $bp-medium) {
       grid-column: 1 / -1;
     }
-  }
 
-  .info {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
-    font-size: 1.5rem;
-    padding-top: .8rem;
+    .info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2rem;
+      font-size: 1.5rem;
+      padding-top: .8rem;
 
-    &:last-child {
-      align-items: flex-start;
-    }
-
-    &__phone {
-      text-transform: uppercase;
-      color: $color-white;
-    }
-
-    &__icons {
-      width: 2rem;
-      height: 2rem;
-      color: $color-white;
-      margin-right: 1.5rem;
+      @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: .5rem;
+      }
 
       &:last-child {
-        margin-top: 2rem;
+        align-items: flex-start;
+
+        @media only screen and (max-width: $bp-medium) {
+          align-items: center;
+        }
+      }
+
+      &__phone {
+        text-transform: uppercase;
+        color: $color-white;
+      }
+
+      &__icons {
+        width: 2rem;
+        height: 2rem;
+        color: $color-white;
+        margin-right: 1.5rem;
+
+        &:last-child {
+          margin-top: 2rem;
+        }
       }
     }
   }
