@@ -1,0 +1,38 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $color-white;
+  padding: 2rem 15rem 0 15rem;
+
+  &__logo {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all .3s;
+
+    &:hover {
+      color: $color-green;
+    }
+  }
+
+  ul {
+    font-size: 1.6rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    li {
+      margin-right: 3rem;
+      transition: all .3s;
+
+      &:nth-child(3) {
+        margin-right: 7rem;
+      }
+
+      &:hover {
+        color: $color-green;
+      }
+    }
+  }
+}

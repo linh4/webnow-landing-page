@@ -1,0 +1,19 @@
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+}
+
+.service {
+  background-color: $color-grey-light;
+  border: 1px solid #000;
+
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  align-items: center;
+
+  &__icon {
+    width: 10rem;
+    height: 10rem;
+  }
+}
