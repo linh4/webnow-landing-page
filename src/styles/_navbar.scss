@@ -2,7 +2,7 @@
   background: $color-primary-dark;
   position: fixed;
   z-index: 1000;
-  padding: 1.5rem 15rem;
+  padding: 1rem 15rem;
   box-shadow: 0 .3rem .5rem rgba($color-black, 0.2);
 }
 
@@ -49,4 +49,93 @@
       }
     }
   }
+}
+
+.navbar {
+  display: block;
+}
+
+.burger-navbar {
+  display: none
+}
+
+@media only screen and (max-width: $bp-medium) {
+    .burger-navbar {
+      display: block;
+    }
+    .navbar {
+      display: none;
+    }
+  }
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+  /* Our sidebar item styling */
+  padding-top: 6rem;
+  text-align: center;
+  list-style: none;
+  outline: none;
+
+  li {
+    font-size: 2.5rem;
+    color: $color-teal-light;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition: color 0.2s;
+
+    &:focus {
+    }
+
+    &:hover {
+      color: $color-green;
+    }
+  }
+
+}
+
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 3.6rem;
+  height: 3rem;
+  left: 2rem;
+  top: 2rem;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: $color-green;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  right: 1rem;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: $color-primary-light;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.menu-item {
+  cursor: pointer;
 }

@@ -1,21 +1,34 @@
 // COLOR VARIABLES
-$color-primary:
-#7f56d2;
-$color-primary-light: #946be6;
-$color-primary-dark: #7752c1;
+$color-primary: #7448D7;
+$color-primary-2: #7652E5;
+$color-primary-light: #736FDF;
+$color-primary-dark: #773FD0;
+$color-primary-dark-2: #7743DD;
 
-$color-grey-light: #e5e5e5;
-$color-grey-dark: #ccc;
-$color-grey-darker: #626262;
+$color-font-1: #8A87E3;
+$color-font-2: #A49CC1;
+
+$color-grey-light: #FCFCFD;
+$color-grey-light-2: #EDEDF2;
+
+$color-grey-dark: #A8A8B2;
+$color-grey-dark-2: #5451A3;
+$color-grey-darker: #11153D;
 
 
-$color-teal-light: #f2f7f6;
-$color-teal-lighter: #fafcfc;
-$color-teal-dark: #c0cfcd;
+$color-teal-light: #EDEDF2;
+$color-teal-lighter: #C4C2EF;
+$color-teal-dark: #F6F9FC;
 
 $color-black: #000;
 $color-white: #fff;
-$color-green: #7fd97f;
+$color-green: #81D398;
+
+// Responsive variables:
+$bp-largest: 75rem; //1200px
+$bp-large: 62.5rem; //1000px
+$bp-medium: 56.25rem; //900px
+$bp-small: 37.5rem; //600px
 
 
 *,
@@ -28,6 +41,14 @@ $color-green: #7fd97f;
 
 html {
   font-size: 62.5%; //1rem = 10px; 10/16 = 62.5%
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 56.25%;
+  }
+
+   @media only screen and (max-width: $bp-large) {
+     font-size: 50%;
+   }
 }
 
 body {

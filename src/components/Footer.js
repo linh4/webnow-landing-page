@@ -24,37 +24,37 @@ const Footer = () => (
     <div className="footer-description">
       <p className="title">Company</p>
       <ul>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">FAQ</a></li>
-        <li><a href="#">Contact us</a></li>
+        <li><a href="/about-us">About us</a></li>
+        <li><a href="/news">News</a></li>
+        <li><a href="/faq">FAQ</a></li>
+        <li><a href="/contact">Contact us</a></li>
       </ul>
     </div>
 
     <div className="footer-description">
       <p className="title">Services</p>
       <ul>
-        <li><a href="#">Web Hosting</a></li>
-        <li><a href="#">Cloud Hosting</a></li>
-        <li><a href="#">VPS Services</a></li>
-        <li><a href="#">Domain Names</a></li>
+        <li><a href="/webhosting">Web Hosting</a></li>
+        <li><a href="/cloud-hosting">Cloud Hosting</a></li>
+        <li><a href="/vps-services">VPS Services</a></li>
+        <li><a href="/domain-names">Domain Names</a></li>
       </ul>
     </div>
 
     <div className="footer-description">
       <p className="title">Others</p>
       <ul>
-        <li><a href="#">Transfer Domains</a></li>
-        <li><a href="#">Customer Portals</a></li>
-        <li><a href="#">Support Portal</a></li>
-        <li><a href="#">Video Tutorials</a></li>
+        <li><a href="/transfer-domain">Transfer Domains</a></li>
+        <li><a href="/customer-portals">Customer Portals</a></li>
+        <li><a href="/support-portal">Support Portal</a></li>
+        <li><a href="/video-tutorial">Video Tutorials</a></li>
       </ul>
     </div>
 
     <div className="footer-social">
-      <a href="#"><FontAwesomeIcon icon={faFacebook} className="footer-social__icons" /></a>
-      <a href="#"><FontAwesomeIcon icon={faYoutube} className="footer-social__icons" /></a>
-      <a href="#"><FontAwesomeIcon icon={faTwitter} className="footer-social__icons" /></a>
+      <a href="/facebook"><FontAwesomeIcon icon={faFacebook} className="footer-social__icons" /></a>
+      <a href="/youtube"><FontAwesomeIcon icon={faYoutube} className="footer-social__icons" /></a>
+      <a href="/twitter"><FontAwesomeIcon icon={faTwitter} className="footer-social__icons" /></a>
     </div>
   </footer>
 )

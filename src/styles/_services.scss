@@ -3,11 +3,15 @@
   grid-template-columns: repeat(2, 1fr);
   grid-row-gap: 2rem;
   grid-column-gap: 3rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-columns: auto;
+  }
 }
 
 .service {
-  background-color: $color-teal-lighter;
-  border: 1px solid $color-teal-dark;
+  background-color: $color-grey-light;
+  border: 1px solid $color-grey-light-2;
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
@@ -16,6 +20,11 @@
   display: grid;
   grid-template-columns: min-content 1fr;
   align-items: center;
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-columns: auto;
+    justify-content: center;
+  }
 
   &:hover {
     transform: translateY(-8px);
@@ -26,12 +35,23 @@
     width: 10rem;
     height: 10rem;
     margin-left: -1.5rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      justify-self: center;
+      margin-left: 0;
+      margin-top: 3rem;
+    }
   }
 
   &__text {
     padding: 3.5rem;
     text-align: left;
     margin-left: -1.5rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      text-align: center;
+      margin-left: 0;
+    }
 
     p {
       font-size: 1.6rem;

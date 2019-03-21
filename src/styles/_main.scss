@@ -5,14 +5,30 @@ main {
   background-image: linear-gradient(
       170deg,
       $color-white 0%, $color-white 67%,
-      $color-teal-light 67.1%, $color-teal-light 100%
+      $color-teal-dark 67.1%, $color-teal-dark 100%
     );
   background-size: 100%;
+
+  @media only screen and (max-width: $bp-largest) {
+    padding: 0 10rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 0 12rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 0 5rem;
+  }
 }
 
 .section-account {
   padding: 0 15rem;
   margin-bottom: 10rem;
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 0 2rem;
+  }
 
   .page-info {
     margin-top: 1rem;
@@ -31,6 +47,10 @@ main {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
 
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-columns: auto;
+  }
+
   .contact--left {
     text-align: left;
     font-size: 3rem;
@@ -38,8 +58,14 @@ main {
 
     justify-self: start;
 
+    @media only screen and (max-width: $bp-medium) {
+      margin-bottom: 3rem;
+      text-align: center;
+      justify-self: center;
+    }
+
     &-top {
-      color: $color-primary-light;
+      color: $color-font-1;
     }
 
     &-bottom {
@@ -49,5 +75,14 @@ main {
 
   .contact--right {
     justify-self: end;
+
+    @media only screen and (max-width: $bp-medium) {
+      justify-self: center;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

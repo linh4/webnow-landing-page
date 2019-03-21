@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-scroll";
+import { slide as Menu } from 'react-burger-menu'
 
 const Navbar = () => {
 
@@ -14,20 +15,37 @@ const Navbar = () => {
   }
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-  }, [])
+    window.addEventListener('scroll', handleScroll)
+  })
 
-  return (
-    <nav className={"nav " + (scroll ? "sticky" : "none")}>
-      <h3 className="nav__logo"><Link to="header" smooth={true} duration={1000}>MyWebNow</Link></h3>
+  const links = () => {
+    return (
       <ul>
         <li><Link to="header" smooth={true} duration={1000}>Home</Link></li>
         <li><Link to="section-services" smooth={true} offset={-100} duration={1000}>Why Us</Link></li>
         <li><Link to="footer" smooth={true} duration={1000}>Contact Us</Link></li>
-        <li><a href="#">Login</a></li>
+        <li><a href="/login">Login</a></li>
         <button className="btn btn--green btn--nav">Support</button>
       </ul>
-    </nav>
+    )
+  }
+
+  return (
+    <>
+      <div className="burger-navbar">
+        <Menu left isOpen={false}>
+        {links()}
+        </Menu>
+      </div>
+
+      <div className="navbar">
+      <nav className={"nav " + (scroll ? "sticky" : "none")}>
+      <h3 className="nav__logo"><Link to="header" smooth={true} duration={1000}>MyWebNow</Link></h3>
+      {links()}
+      </nav>
+      </div>
+
+    </>
   )
 }
 
