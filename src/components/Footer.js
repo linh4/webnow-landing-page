@@ -24,37 +24,37 @@ const Footer = () => (
     <div className="footer-description">
       <p className="title">Company</p>
       <ul>
-        <li>About us</li>
-        <li>News</li>
-        <li>FAQ</li>
-        <li>Contact us</li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Contact us</a></li>
       </ul>
     </div>
 
     <div className="footer-description">
       <p className="title">Services</p>
       <ul>
-        <li>Web Hosting</li>
-        <li>Cloud Hosting</li>
-        <li>VPS Services</li>
-        <li>Domain Names</li>
+        <li><a href="#">Web Hosting</a></li>
+        <li><a href="#">Cloud Hosting</a></li>
+        <li><a href="#">VPS Services</a></li>
+        <li><a href="#">Domain Names</a></li>
       </ul>
     </div>
 
     <div className="footer-description">
       <p className="title">Others</p>
       <ul>
-        <li>Transfer Domains</li>
-        <li>Customer Portals</li>
-        <li>Support Portal</li>
-        <li>Video Tutorials</li>
+        <li><a href="#">Transfer Domains</a></li>
+        <li><a href="#">Customer Portals</a></li>
+        <li><a href="#">Support Portal</a></li>
+        <li><a href="#">Video Tutorials</a></li>
       </ul>
     </div>
 
     <div className="footer-social">
-      <FontAwesomeIcon icon={faFacebook} className="footer-social__icons" />
-      <FontAwesomeIcon icon={faYoutube} className="footer-social__icons" />
-      <FontAwesomeIcon icon={faTwitter} className="footer-social__icons" />
+      <a href="#"><FontAwesomeIcon icon={faFacebook} className="footer-social__icons" /></a>
+      <a href="#"><FontAwesomeIcon icon={faYoutube} className="footer-social__icons" /></a>
+      <a href="#"><FontAwesomeIcon icon={faTwitter} className="footer-social__icons" /></a>
     </div>
   </footer>
 )

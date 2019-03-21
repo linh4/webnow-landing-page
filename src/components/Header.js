@@ -1,18 +1,11 @@
 import React from 'react';
+import Navbar from './Navbar';
+import { Link } from "react-scroll";
 
 const Header = () => (
   <header className="header">
 
-    <nav className="nav">
-      <h3 className="nav__logo">MyWebNow</h3>
-      <ul>
-        <li>Home</li>
-        <li>Why Us</li>
-        <li>Contact Us</li>
-        <li>Login</li>
-        <button className="btn btn--green btn--nav">Support</button>
-      </ul>
-    </nav>
+    <Navbar />
 
     <div className="header__text-box">
       <h1 className="heading-primary">Get a website in <br/> 15 minutes <span>or less</span></h1>
@@ -24,9 +17,7 @@ const Header = () => (
 
     <div className="header__pointer">
       <h3 className="heading-tertiary">Learn how we can enhance your business</h3>
-      <div className="header__pointer-icon">
-        <span>&#8675;</span>
-      </div>
+      <Link className="header__pointer-icon" to="section-services" smooth={true} offset={-100} duration={1000}><span>&#8675;</span></Link>
     </div>
   </header>
 )

@@ -14,7 +14,7 @@
     align-items: center;
     margin-bottom: 2rem;
     font-size: 1.5rem;
-    padding-top: 1rem;
+    padding-top: .8rem;
 
     &:last-child {
       align-items: flex-start;
@@ -47,8 +47,15 @@
     ul {
       list-style: none;
 
-      li {
+      li a {
         font-size: 1.5rem;
+        text-decoration: none;
+        color: inherit;
+        transition: all .2s ease-in;
+
+        &:hover {
+          color: $color-white;
+        }
       }
     }
   }
@@ -61,7 +68,12 @@
       margin-bottom: 2rem;
       width: 3rem !important;
       height: 3rem !important;
-      color: $color-grey-dark;
+      color: $color-teal-dark;
+      transition: all .2s ease-in;
+
+      &:hover {
+        color: $color-white;
+      }
     }
   }
 
